@@ -4,8 +4,6 @@ import '../../index.css';
 import PropTypes from 'prop-types';
 
 
-const modalRoot = document.getElementById('modal-root');
-
 
 export class Modal extends Component {
     componentDidMount() {
@@ -30,6 +28,8 @@ export class Modal extends Component {
 
     render() {
         const { modalImg, alt } = this.props;
+        const modalRoot = document.getElementById('modal-root');
+
         return createPortal(
             <div className="Overlay" onClick={this.handleBackdropClick}>
                 <div className="Modal">
