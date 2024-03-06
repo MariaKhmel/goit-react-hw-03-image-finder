@@ -6,6 +6,7 @@ import PropTypes from 'prop-types';
 
 const modalRoot = document.getElementById('modal-root');
 
+
 export class Modal extends Component {
     componentDidMount() {
         window.addEventListener('keydown', this.handleOnEscapeModalClose);
